@@ -137,7 +137,7 @@ if (typeof (SiebelAppFacade.cbox2PR) === "undefined") {
 									let data_uri = BCRM_B64.get(row_id);
 									//alternative: src=direct URL (not using global var), GET on click, use ?fields=*Attachment Id
 									//example for Action BC
-									data_uri = location.origin + ":443/siebel/v1.0/data/" + bo + "/" + bc + "/" + row_id + "?fields=Activity Attachment Id";
+									//data_uri = location.origin + ":443/siebel/v1.0/data/" + bo + "/" + bc + "/" + row_id + "?fields=Activity Attachment Id";
 									if (ext != "pdf") {
 										let img = $("<img>");
 										img.attr("src", data_uri);
